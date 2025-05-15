@@ -1,0 +1,33 @@
+.toggleButton {
+  @apply py-2 px-4 border border-gray-300 rounded-md bg-white cursor-pointer flex items-center gap-2 relative transition-all duration-200 text-sm font-medium;
+  width: 180px;
+  min-width: 180px;
+}
+
+.toggleButton.active {
+  @apply bg-blue-50 border-blue-300;
+}
+
+.toggleSwitch {
+  @apply relative w-10 h-5 rounded-full transition-colors duration-200 ease-in-out shrink-0;
+}
+
+.toggleSwitchActive {
+  @apply bg-blue-500;
+}
+
+.toggleSwitchInactive {
+  @apply bg-gray-300;
+}
+
+.toggleKnob {
+  @apply absolute w-4 h-4 bg-white rounded-full top-0.5 transition-transform duration-200 ease-in-out;
+}
+
+.toggleKnobActive {
+  @apply transform translate-x-5;
+}
+
+.toggleKnobInactive {
+  @apply translate-x-0.5;
+} 

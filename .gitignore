@@ -1,0 +1,99 @@
+data/
+standard_data_format/output/json_files*/*
+standard_data_format/output/debug_output*/*
+standard_data_format/output_scraped/*
+sdf/*
+trials/*
+wob_woo_downloads/*
+standard_data_format/output_scraped/*
+scraped_content/*
+scraper/timelines/*
+html/*.cursorignore
+.venv/
+trials/# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+wandb/
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+.env
+pythonenv*
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDEs and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Project specific
+*.log
+coverage/
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Data
+data/*
+!data/.gitkeep
+!data/README.md
+*.bin
+*.vec
+*.model
+*.pkl
+*.h5
+
+# Cache
+cache/
+*.ckpt
+
+# Eval
+evaluation_results/
+/backend/src/eval/evaluation_results/
+
+
+# Exception for trained models that should be tracked with LFS
+!trained_models/
+!trained_models/**/*
+/chunks/
+
+
+.next/
+*.lprof
+
+# Chat history
+backend/chat_history.json
+llm_debug/

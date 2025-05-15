@@ -1,0 +1,100 @@
+.message {
+  @apply my-1 p-4 rounded-lg max-w-xl break-words whitespace-pre-wrap shadow-sm;
+}
+
+.userMessage {
+  @apply bg-primary text-white ml-auto text-left;
+}
+
+.botMessage {
+  @apply bg-gray-100 mr-auto mt-2 text-left;
+}
+
+.sourceId {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 1px 4px;
+  margin: 0 1px;
+  background-color: rgba(59, 130, 246, 0.08);
+  border-radius: 3px;
+  cursor: pointer;
+  font-family: var(--font-mono);
+  font-weight: 500;
+  color: rgb(59, 130, 246);
+  text-decoration: none;
+  transition: all 0.15s ease-in-out;
+  vertical-align: middle;
+  position: relative;
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  font-size: 0.85em;
+}
+
+.sourceId:hover {
+  background-color: rgba(59, 130, 246, 0.15);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  transform: translateY(-1px);
+}
+
+.sourceId:active {
+  transform: translateY(1px) scale(0.98);
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  background-color: rgba(59, 130, 246, 0.2);
+}
+
+.sourceIdNumber {
+  font-size: 0.9em;
+  position: relative;
+}
+
+.sourceIdDot {
+  width: 4px;
+  height: 4px;
+  background-color: rgb(59, 130, 246);
+  border-radius: 50%;
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+
+.sourceId:hover .sourceIdDot {
+  animation: pulse 1.5s infinite;
+  transform: scale(1.2);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+  }
+}
+
+.sourceIdIcon {
+  @apply w-3.5 h-3.5 ml-0.5 opacity-75;
+  display: inline-block;
+}
+
+.sourceId:hover .sourceIdIcon {
+  @apply opacity-100;
+}
+
+.searchSummary {
+  @apply text-xs text-gray-500 bg-gray-50 rounded-lg px-3 py-2 border border-gray-200;
+}
+
+.viewSourcesBtn {
+  @apply text-primary hover:text-primary-dark text-sm flex items-center transition-colors;
+}
+
+.sourcePreview {
+  @apply fixed z-50 max-w-sm p-3 text-sm bg-white rounded-lg shadow-lg border border-gray-200;
+  max-height: 200px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+  line-height: 1.4;
+} 

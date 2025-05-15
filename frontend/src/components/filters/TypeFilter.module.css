@@ -1,0 +1,39 @@
+.filterButton {
+  @apply py-2 px-4 border border-gray-300 rounded-md bg-white cursor-pointer flex items-center gap-2 relative transition-all duration-200 text-sm font-medium w-[180px];
+}
+
+.filterButton:hover {
+  @apply bg-gray-100;
+}
+
+.activeFilter {
+  @apply bg-gray-100 border-primary shadow-sm;
+}
+
+.dropdownMenu {
+  @apply absolute bottom-full left-0 mb-2 w-56 bg-white rounded-lg shadow-lg border border-gray-200 py-2 z-10 origin-bottom-left transition-all;
+}
+
+.menuHeader {
+  @apply text-sm font-medium text-gray-700 mb-2;
+}
+
+.checkboxItem {
+  @apply flex items-center;
+}
+
+.checkboxInput {
+  @apply w-4 h-4 text-primary border-gray-300 rounded focus:ring-primary;
+}
+
+.checkboxLabel {
+  @apply ml-2 text-sm text-gray-700 cursor-pointer;
+}
+
+.clearButton {
+  @apply text-xs py-1 px-2 text-gray-600 hover:text-gray-800;
+}
+
+.countBadge {
+  @apply ml-auto bg-primary/10 text-primary rounded-full w-5 h-5 flex items-center justify-center text-xs font-medium shrink-0;
+} 

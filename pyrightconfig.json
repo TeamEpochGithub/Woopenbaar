@@ -1,0 +1,12 @@
+{
+    "include": ["backend"],
+    "pythonVersion": "3.10",
+    "typeCheckingMode": "strict",
+    "reportMissingImports": true,
+    "extraPaths": ["./backend"],
+    "python.analysis.autoImportCompletions": true,
+    "reportMissingTypeStubs": false,
+    "venvPath": ".",
+    "venv": ".venv"
+  }
+  

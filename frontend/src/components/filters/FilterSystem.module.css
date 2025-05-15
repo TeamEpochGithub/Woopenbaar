@@ -1,0 +1,19 @@
+.filterButton {
+  @apply py-2 px-4 border border-gray-300 rounded-md bg-white cursor-pointer flex items-center gap-2 relative transition-all duration-200 text-sm font-medium w-[160px];
+}
+
+.filterButton:hover {
+  @apply bg-gray-100;
+}
+
+.activeFilter {
+  @apply bg-gray-100 border-primary shadow-sm;
+}
+
+.toggleButton {
+  @apply py-2 px-4 border border-gray-300 rounded-md bg-white cursor-pointer flex items-center gap-2 relative transition-all duration-200 text-sm font-medium w-[160px];
+}
+
+.toggleButton.active {
+  @apply bg-blue-50 border-blue-300;
+} 

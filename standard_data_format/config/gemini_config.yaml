@@ -1,0 +1,38 @@
+# Gemini API configuration
+marker:
+  output_format: "markdown"
+  use_local_model: false
+  llm_service: "marker.services.gemini.GoogleGeminiService"
+  ocr:
+    dpi: 400
+    psm: 6
+    oem: 3
+  layout:
+    margin_tolerance: 40
+    min_line_height: 6
+  debug: false
+  debug_output_dir: "output_scraped/timelines/debug_output"
+  force_ocr: true
+  strip_existing_ocr: true
+  languages: "nl"
+  disable_image_extraction: false
+  batch_size: 1
+
+paths:
+  base_dir: "standard_data_format"
+  json_output_dir: "output/json_files"
+  metadata_path: "data/metadata/vws_metadata_standardized.csv"
+  document_folder: "data/woo_scraped/documents"
+  base_path: "~/EpochV/WOO/rag/Raggle" 
+
+#PDF Converter Settings
+pdf_converter:
+  use_local_model: false
+  allow_regular_conversion: false
+  allow_ocr: false
+  allow_llm: true
+  llm_service: "marker.services.gemini.GoogleGeminiService"
+  batch_size: 4
+  debug: true
+  output_format: "markdown"
+  languages: "nl"
